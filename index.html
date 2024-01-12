@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+
+
+<style>
+
+
+body{
+  background: linear-gradient(90deg , rgb(44, 43, 43) , rgb(23, 23, 237) , rgb(17, 91, 249), rgb(23, 23, 237) , rgb(17, 91, 249), rgb(23, 23, 237) , rgb(17, 91, 249) );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+#hrs{
+
+  width: 300px;
+  height: 100px;
+  font-size: 50px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+  box-shadow: 2px 2px 5px  rgb(250, 247, 247);
+  position: relative;
+  top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+}
+
+</style>
+
+
+  </head>
+  <body>
+      
+   
+      
+      
+      <!-- using Function -->
+      
+    
+
+
+
+    <div id="hrs">00</div>
+    
+      
+      <script >
+
+
+// let hrs = document.getElementById("hrs");
+// let min = document.getElementById("min");
+// let sec = document.getElementById("sec");
+
+
+
+
+// setInterval(() =>{
+
+//   let time = new Date();
+//     hrs.innerHTML= time.getHours();
+// min.innerHTML= time.getMinutes();
+// sec.innerHTML= time.getSeconds();
+
+// },1000)
+
+let time = document.getElementById("hrs");
+setInterval(()=>{
+
+
+let d = new Date();
+time.innerHTML = d.toLocaleTimeString();
+
+} )
+ 
+
+
+
+
+
+
+
+
+
+      </script>
+  </body>
+</html>
